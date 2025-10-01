@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velocity Funds</title>
+  <meta name="description" content="Velocity Funds — futures prop firm evaluations with clear rules, tight risk, and fast payouts.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <script defer src="/assets/js/main.js"></script>
+
+<title>FAQ — Velocity Funds</title>
+</head>
+<body class="bg-black text-white">
+<header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
+  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
+    <a href="/index.html" class="flex items-center gap-2">
+      <img src="/assets/images/logo.svg" alt="Velocity Funds" class="h-8 w-8" />
+      <span class="text-white font-semibold text-lg">Velocity Funds</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-6 text-sm">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="/challenges.html">Challenges</a>
+      <a class="nav-link" href="/rules.html">Rules</a>
+      <a class="nav-link" href="/faq.html">FAQ</a>
+      <a class="nav-link" href="/leaderboard.html">Leaderboard</a>
+      <a class="btn btn-primary" href="/dashboard.html">Trader Dashboard</a>
+    </nav>
+    <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg border border-neutral-700 px-3 py-2 text-white">
+      <span class="sr-only">Toggle menu</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+      </svg>
+    </button>
+  </div>
+  <div id="mobileMenu" class="md:hidden hidden border-t border-neutral-800">
+    <div class="px-4 py-3 grid gap-3 bg-neutral-950">
+      <a class="mobile-link" href="/index.html">Home</a>
+      <a class="mobile-link" href="/challenges.html">Challenges</a>
+      <a class="mobile-link" href="/rules.html">Rules</a>
+      <a class="mobile-link" href="/faq.html">FAQ</a>
+      <a class="mobile-link" href="/leaderboard.html">Leaderboard</a>
+      <a class="btn btn-primary w-full text-center" href="/dashboard.html">Trader Dashboard</a>
+    </div>
+  </div>
+</header>
+
+<section class="mx-auto max-w-4xl px-4 py-16">
+  <h1 class="section-title">Frequently Asked Questions</h1>
+  <div class="divide-y divide-neutral-800">
+    <details class="faq">
+      <summary>How fast are payouts?</summary>
+      <p>First payout is typically within 7–14 days after going live, then biweekly. Edit text in <code>/faq.html</code>.</p>
+    </details>
+    <details class="faq">
+      <summary>What platforms are supported?</summary>
+      <p>NinjaTrader, Tradovate, R|Trader Pro, and more—configure your integrations on the dashboard page.</p>
+    </details>
+    <details class="faq">
+      <summary>Are EAs/algos allowed?</summary>
+      <p>Discretionary and algo strategies are allowed if they follow risk rules; HFT/latency abuse is prohibited.</p>
+    </details>
+    <details class="faq">
+      <summary>Do you allow copy trading?</summary>
+      <p>Mirroring between multiple evaluation accounts to circumvent risk rules is prohibited.</p>
+    </details>
+  </div>
+</section>
+<footer class="border-t border-neutral-800 mt-24">
+  <div class="mx-auto max-w-7xl px-4 py-12 grid md:grid-cols-4 gap-8">
+    <div>
+      <div class="flex items-center gap-2 mb-3">
+        <img src="/assets/images/logo.svg" class="h-8 w-8" alt="Velocity Funds">
+        <span class="text-white font-semibold">Velocity Funds</span>
+      </div>
+      <p class="text-neutral-400 text-sm leading-6">Accelerating traders with transparent rules, disciplined risk, and fast, reliable payouts.</p>
+    </div>
+    <div>
+      <h4 class="footer-heading">Product</h4>
+      <ul class="footer-links">
+        <li><a href="/challenges.html">Challenges</a></li>
+        <li><a href="/rules.html">Rules</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/leaderboard.html">Leaderboard</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Company</h4>
+      <ul class="footer-links">
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+        <li><a href="/careers.html">Careers</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="footer-heading">Legal</h4>
+      <ul class="footer-links">
+        <li><a href="/terms.html">Terms</a></li>
+        <li><a href="/privacy.html">Privacy</a></li>
+        <li><a href="/risk-disclosure.html">Risk Disclosure</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-neutral-800">
+    <div class="mx-auto max-w-7xl px-4 py-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
+      <p class="text-neutral-500 text-sm">&copy; <span id="year"></span> Velocity Funds. All rights reserved.</p>
+      <p class="text-neutral-500 text-xs">Trading futures involves significant risk of loss and is not suitable for all investors.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
