@@ -18,62 +18,8 @@
   <script defer src="assets/js/main.js"></script>
 </head>
 <body class="bg-black text-white">
-<header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
-  <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-2">
-      <img src="./assets/images/velocity-funds-orbital-icon.svg" alt="Velocity Funds" class="h-8 w-8" />
-      <span class="text-white font-semibold text-lg">Velocity Funds</span>
-    </a>
-    <nav class="hidden md:flex items-center gap-6 text-sm">
-      <a class="nav-link" href="index.html">Home</a>
-      <a class="nav-link" href="rules.html">Rules</a>
-      <a class="nav-link" href="faq.html">FAQ</a>
-      <a class="nav-link" href="leaderboard.html">Leaderboard</a>
-      <a class="btn btn-primary" href="#">Login</a>
-    </nav>
-    <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg border border-neutral-700 px-3 py-2 text-white">
-      <span class="sr-only">Toggle menu</span>
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-      </svg>
-    </button>
-  </div>
-  <div id="mobileMenu" class="md:hidden hidden border-t border-neutral-800">
-    <div class="px-4 py-3 grid gap-3 bg-neutral-950">
-      <a class="mobile-link" href="index.html">Home</a>
-      <a class="mobile-link" href="challenges.html">Challenges</a>
-      <a class="mobile-link" href="rules.html">Rules</a>
-      <a class="mobile-link" href="faq.html">FAQ</a>
-      <a class="mobile-link" href="leaderboard.html">Leaderboard</a>
-      <a class="btn btn-primary w-full text-center" href="#">Login</a>
-    </div>
-  </div>
-</header>
 
-<section class="mx-auto max-w-4xl px-4 py-16">
-  <h1 class="section-title">Trading Rules</h1>
-  <div class="prose prose-invert max-w-none">
-    <ul class="rules-list">
-      <li><strong>Daily Loss Limit:</strong> Exceeding the daily loss ends the evaluation.</li>
-      <li><strong>Trailing Drawdown:</strong> Trails behind closed P&amp;L until target is met; then becomes static.</li>
-      <li><strong>Consistency:</strong> No single day should exceed 40% of the total target during evaluation.</li>
-      <li><strong>News:</strong> Trading through major red-folder news is allowed, but use caution (configurable).</li>
-      <li><strong>Holding:</strong> No overnight holds in evaluation; live account per product rules.</li>
-      <li><strong>Products:</strong> CME equity index futures &amp; micros; expand in <code>/rules.html</code> as needed.</li>
-      <li><strong>Scaling:</strong> See Scaling Plan below for contract limits after funding.</li>
-    </ul>
-    <h2>Scaling Plan</h2>
-    <table class="table">
-      <thead><tr><th>Balance</th><th>Max Contracts</th></tr></thead>
-      <tbody>
-        <tr><td>$0â€“$2,500</td><td>2 micros</td></tr>
-        <tr><td>$2,500â€“$5,000</td><td>4 micros</td></tr>
-        <tr><td>$5,000+</td><td>6+ micros (manager approval)</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="mt-3 text-neutral-500 text-xs">Adjust these in <code>/rules.html</code> or share your final policy and Iâ€™ll update.</p>
-</section>
+<p>coming soon.</p>
 
 <footer class="border-t border-neutral-800 mt-24">
   <div class="mx-auto max-w-7xl px-4 py-12 grid md:grid-cols-4 gap-8">
@@ -87,34 +33,91 @@
     <div>
       <h4 class="footer-heading">Funding</h4>
       <ul class="footer-links">
-        <li><a href="rules.html">Rules</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="leaderboard.html">Leaderboard</a></li>
+        <li><a href="#">Rules</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Leaderboard</a></li>
       </ul>
     </div>
     <div>
       <h4 class="footer-heading">Company</h4>
       <ul class="footer-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="careers.html">Careers</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Careers</a></li>
       </ul>
     </div>
     <div>
       <h4 class="footer-heading">Legal</h4>
       <ul class="footer-links">
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-        <li><a href="risk-disclosure.html">Risk Disclosure</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Risk Disclosure</a></li>
       </ul>
     </div>
   </div>
   <div class="border-t border-neutral-800">
-    <div class="mx-auto max-w-7xl px-4 py-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-      <p class="text-neutral-500 text-sm">&copy; <span id="year"></span> Velocity Funds. All rights reserved.</p>
-      <p class="text-neutral-500 text-xs">Trading futures involves significant risk of loss and is not suitable for all investors.</p>
-    </div>
   </div>
+<!-- ============================= -->
+<!-- Velocity Funds Legal Disclaimer (Separate Footer Div) -->
+<!-- ============================= -->
+<div class="border-t border-neutral-900 bg-black/90 text-neutral-400 text-sm leading-relaxed backdrop-blur-md">
+  <div class="max-w-6xl mx-auto px-4 py-6 space-y-10">
+    <style>
+      .glow-header { transition: all 0.3s ease; }
+      .glow-header:hover { color: #34d399; text-shadow: 0 0 10px rgba(52, 211, 153, 0.6); }
+      .footer-icon { width: 38px; height: auto; filter: grayscale(100%) brightness(0.8); opacity: 0.7; transition: all 0.4s ease; transform: translateY(10px); }
+      .footer-icon:hover { filter: drop-shadow(0 0 10px rgba(52, 211, 153, 0.9)) brightness(1); opacity: 1; transform: translateY(0) scale(1.05); }
+      .footer-icon.loaded { transform: translateY(0); opacity: 1; }
+    </style>
+    <div class="space-y-6">
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">General Legal Disclaimer</h2>
+        <p>The materials, content, and information made available by <strong>Velocity Funds LLC</strong> ("Velocity Funds," "we," "our," or "us") through its website, digital interfaces, or other communication channels are provided strictly for general informational and educational purposes only. Nothing herein constitutes investment advice, solicitation, or an offer to buy or sell any financial instruments, securities, or products in any jurisdiction. The information is not directed toward any specific individual or entity and should not be construed as personalized financial, legal, or tax advice.</p>
+        <p class="mt-2">Velocity Funds operates an evaluation and simulated trading environment solely for analytical, educational, and skill-assessment purposes. Any models, data, or performance metrics presented through the Velocity Funds platform do not reflect actual live trading in regulated markets and do not guarantee or imply future performance. Each user is responsible for ensuring that access or use of the platform complies with their jurisdiction's laws and regulations.</p>
+      </div>
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">Risk Disclosure</h2>
+        <p>Trading and speculation in financial markets-whether real, simulated, or educational-carry a high degree of risk. Participation in simulated evaluations or live trading can result in substantial loss, including the loss of all invested capital or more. Simulated performance does not guarantee similar outcomes in live markets, as conditions such as liquidity, volatility, and execution speed differ significantly.</p>
+        <p class="mt-2">Participants should engage only with <em>risk capital</em>-funds they can afford to lose without impacting financial stability or lifestyle. While no real capital is at risk in simulations, strategies developed in simulated environments may not perform effectively in live markets. Velocity Funds LLC does not warrant the accuracy, completeness, or timeliness of any content and makes no assurance of future success or profitability.</p>
+      </div>
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">Hypothetical Performance Disclosure</h2>
+        <p>All performance results displayed or referenced by Velocity Funds LLC are hypothetical or simulated unless explicitly stated otherwise. Hypothetical results have inherent limitations-they are developed with the benefit of hindsight and do not reflect actual trading. Simulated results cannot fully capture real-world factors such as liquidity constraints, emotional decision-making, or execution delays.</p>
+        <p class="mt-2">No representation is made that any account will achieve profits or losses similar to those shown in simulations. Testimonials and user stories are anecdotal and not indicative of typical results. Past performance, whether simulated or real, is not a reliable indicator of future outcomes.</p>
+      </div>
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">Customer Compensation Disclosure</h2>
+        <p>All trading examples and compensation illustrations presented by Velocity Funds LLC are hypothetical and for educational purposes only. They do not involve real capital or represent live trading conditions. Simulated accounts differ materially from live trading accounts in terms of execution, slippage, and psychological pressures. Velocity Funds makes no warranty that any participant will achieve comparable results.</p>
+      </div>
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">CFTC Rule 4.41 Compliance Statement</h2>
+        <p>In accordance with Rule 4.41 of the U.S. Commodity Futures Trading Commission (CFTC): Hypothetical or simulated performance results have inherent limitations. They do not represent actual trading. Since trades have not been executed, results may under- or over-compensate for market factors such as liquidity, execution, and psychology.</p>
+        <p class="mt-2">No representation is made that any account will achieve profits or losses similar to those shown. Testimonials or endorsements are not representative of all users' experiences. Past results, whether simulated or real, are not indicative of future performance. This disclosure is included to maintain transparency and regulatory alignment, upholding Velocity Funds LLC's commitment to integrity and user protection.</p>
+      </div>
+    </div>
+    <hr class="border-neutral-800 my-10">
+    <div class="flex flex-col items-center justify-center text-center space-y-5">
+      <div class="flex items-center space-x-6">
+        <img src="assets/icons/visa.svg" alt="Visa" class="footer-icon" />
+        <img src="assets/icons/applepay.svg" alt="Apple Pay" class="footer-icon" />
+        <img src="assets/icons/googlepay.svg" alt="Google Pay" class="footer-icon" />
+      </div>
+      <div class="text-neutral-500 text-xs space-y-1">
+        <p><strong>Velocity Funds LLC</strong> - Orlando, Florida</p>
+        <p>c 2025 Velocity Funds LLC. All Rights Reserved.</p>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".footer-icon").forEach((icon, i) => {
+          setTimeout(() => icon.classList.add("loaded"), 150 * i);
+        });
+      });
+    </script>
+  </div>
+</div>
+
+
 </footer>
 
 </body>
