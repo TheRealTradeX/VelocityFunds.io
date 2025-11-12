@@ -1,32 +1,35 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Velocity Funds</title>
-  <meta name="description" content="Velocity Funds — futures prop firm evaluations with clear rules, tight risk, and fast payouts.">
+  <meta name="description" content="Velocity Funds ? futures prop firm evaluations with clear rules, tight risk, and fast payouts.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/assets/images/velocity-funds-orbital-icon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Velocity Funds">
+  <meta property="og:description" content="Futures prop firm evaluations with clear rules, tight risk, and fast payouts.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/assets/images/velocity-funds-orbital-icon.svg">
   <link rel="stylesheet" href="/assets/css/styles.css">
   <script defer src="/assets/js/main.js"></script>
-
 </head>
 <body class="bg-black text-white" style="font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;">
 <header class="sticky top-0 z-50 bg-neutral-950/80 backdrop-blur border-b border-neutral-800">
   <div class="mx-auto max-w-7xl px-4 py-3 flex items-center justify-between">
     <a href="/index.html" class="flex items-center gap-2">
-      <img src="/assets/images/logo.svg" alt="Velocity Funds" class="h-8 w-8" />
+      <img src="./assets/images/velocity-funds-orbital-icon.svg" alt="Velocity Funds" class="h-8 w-8" />
       <span class="text-white font-semibold text-lg">Velocity Funds</span>
     </a>
     <nav class="hidden md:flex items-center gap-6 text-sm">
       <a class="nav-link" href="/index.html">Home</a>
-      <a class="nav-link" href="/challenges.html">Challenges</a>
       <a class="nav-link" href="/rules.html">Rules</a>
       <a class="nav-link" href="/faq.html">FAQ</a>
       <a class="nav-link" href="/leaderboard.html">Leaderboard</a>
-      <a class="btn btn-primary" href="/dashboard.html">Trader Dashboard</a>
+      <a class="btn btn-primary" href="#">Login</a>
     </nav>
     <button id="mobileMenuBtn" class="md:hidden inline-flex items-center justify-center rounded-lg border border-neutral-700 px-3 py-2 text-white">
       <span class="sr-only">Toggle menu</span>
@@ -38,133 +41,561 @@
   <div id="mobileMenu" class="md:hidden hidden border-t border-neutral-800">
     <div class="px-4 py-3 grid gap-3 bg-neutral-950">
       <a class="mobile-link" href="/index.html">Home</a>
-      <a class="mobile-link" href="/challenges.html">Challenges</a>
       <a class="mobile-link" href="/rules.html">Rules</a>
       <a class="mobile-link" href="/faq.html">FAQ</a>
       <a class="mobile-link" href="/leaderboard.html">Leaderboard</a>
-      <a class="btn btn-primary w-full text-center" href="/dashboard.html">Trader Dashboard</a>
+      <a class="btn btn-primary w-full text-center" href="#">Login</a>
     </div>
   </div>
 </header>
 
-<section class="relative overflow-hidden">
-  <div class="absolute inset-0 bg-gradient-to-b from-neutral-900 via-neutral-950 to-black"></div>
-  <div class="relative mx-auto max-w-7xl px-4 py-24">
-    <div class="grid lg:grid-cols-2 gap-10 items-center">
-      <div>
-        <div class="inline-flex items-center gap-2 rounded-full border border-neutral-800 px-3 py-1 mb-4">
-          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span class="text-xs text-neutral-300">Live evaluations open</span>
-        </div>
-        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight text-white leading-tight">
-          Accelerating Wealth.<br><span class="text-emerald-400">Building Legacy.</span>
-        </h1>
-        <p class="mt-5 text-neutral-300 text-lg leading-7">
-          Velocity Funds backs disciplined traders with transparent rules, fast payouts, and real scaling. 
-          Prove your edge in a ruleset that mirrors real risk. Get funded, keep more of your profits, and scale with discipline.
+<!-- HERO WITH VIDEO BACKGROUND -->
+<section class="hero-video">
+  <div class="hero-video-bg">
+    <video autoplay muted loop playsinline>
+      <source src="./assets/bg/velocity-funds-hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-video-overlay"></div>
+  </div>
+
+  <div class="container hero-video-inner">
+    <div class="hero-video-copy">
+      <p class="eyebrow">Velocity Funds</p>
+
+      <h1>Accelerate Your <span class="text-emerald-400">Edge</span></h1>
+
+      <p class="hero-subtitle">
+        Velocity Funds backs disciplined traders with transparent rules, fast payouts,
+        and real scaling. Prove your edge in a ruleset that mirrors real risk.
+        Get funded, keep more of your profits, and scale with discipline.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#plans" class="btn btn-primary">Get Funded</a>
+        <a href="#pledge" class="btn btn-ghost">View Plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- VELOCITY PLEDGE CARDS -->
+<section id="pledge" class="pledge">
+  <div class="container">
+    <h2 class="pledge-heading">The Velocity Pledge</h2>
+
+    <div class="pledge-grid">
+      <!-- 01 -->
+      <article class="pledge-card">
+        <p class="pledge-index">01</p>
+        <p class="benefit-eyebrow">Relax</p>
+        <h3 class="benefit-title">1 Simple Evaluation.</h3>
+        <p class="benefit-body">
+          Trust & transparency start with one simple evaluation across all plans.
+          You can pass in as little as 3 days.
         </p>
-        <div class="mt-8 flex items-center gap-4">
-          <a href="/challenges.html" class="btn btn-primary">View Challenges</a>
-          <a href="/rules.html" class="btn btn-ghost">View Rules</a>
-        </div>
-        <div class="mt-6 text-neutral-500 text-sm">
-          <p>Fast payouts · One-phase evaluations · Transparent scaling</p>
-        </div>
-      </div>
-  <div class="relative w-full aspect-[16/9] rounded-3xl border border-neutral-800 bg-neutral-950 shadow-xl">
-  <img src="./assets/images/Velocity-Dashboard.png" alt="Trading dashboard mockup"
-       class="absolute inset-0 h-full w-full object-cover rounded-3xl" />
-</div>
-       
-        
-      </div>
+      </article>
+
+      <!-- 02 -->
+      <article class="pledge-card">
+        <p class="pledge-index">02</p>
+        <p class="benefit-eyebrow">Your rules</p>
+        <h3 class="benefit-title">Clear risk parameters.</h3>
+        <p class="benefit-body">
+          Realistic Max Loss Limits and End of Day trailing drawdowns designed for professional discipline.
+        </p>
+      </article>
+
+      <!-- 03 -->
+      <article class="pledge-card">
+        <p class="pledge-index">03</p>
+        <p class="benefit-eyebrow">Benefit</p>
+        <h3 class="benefit-title">Weekly Payouts.</h3>
+        <p class="benefit-body">
+          Velocity Starter & Sim-Funded programs enable you to earn payouts weekly at a 90% split.
+        </p>
+      </article>
+
+      <!-- 04 -->
+      <article class="pledge-card">
+        <p class="pledge-index">04</p>
+        <p class="benefit-eyebrow">Advantage</p>
+        <h3 class="benefit-title">No DLL or Consistency.</h3>
+        <p class="benefit-body">
+          Freedom to trade how you want! Enjoy no DLL, Conistency, or complicated rules while sim-funded. 
+        </p>
+      </article>
     </div>
   </div>
 </section>
 
- <img src="./assets/images/The Velocity Pledge.png" />
+<!--Velocity Pricing Section-->
 
-<section class="mx-auto max-w-7xl px-4 py-16">
-  <h3 class="text-neutral-400 text-xs uppercase tracking-widest mb-6">Trusted By</h3>
-  <div class="grid grid-cols-2 md:grid-cols-5 gap-6 opacity-70">
-    <div class="logo-skel"></div>
-    <div class="logo-skel"></div>
-    <div class="logo-skel"></div>
-    <div class="logo-skel"></div>
-    <div class="logo-skel"></div>
-  </div>
-</section>
-
-<section class="mx-auto max-w-7xl px-4 py-16">
-  <div class="grid md:grid-cols-3 gap-6">
-    <div class="card">
-      <h4 class="card-title">One‑Phase Evaluation</h4>
-      <p class="card-text">Hit the profit target while respecting daily loss and trailing drawdown—no second phase.</p>
-    </div>
-    <div class="card">
-      <h4 class="card-title">Fast & Reliable Payouts</h4>
-      <p class="card-text">First payout within 7–14 days after going live, then regular cycles with fair splits.</p>
-    </div>
-    <div class="card">
-      <h4 class="card-title">Transparent Rules</h4>
-      <p class="card-text">Clear risk parameters designed to mimic real prop risk, not to trip you up.</p>
-    </div>
-  </div>
-</section>
-
-<section class="mx-auto max-w-7xl px-4 py-16" id="pricing">
-  <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6">
+<section class="mx-auto max-w-7xl px-4 py-16" id="plans">
+  <div class="flex flex-col gap-4">
     <div>
-      <h2 class="section-title">Choose Your Challenge</h2>
-      <p class="section-subtitle">Pick an account size and get started today. No hidden rules.</p>
+      <h2 class="section-title">The Velocity Path: Evaluations & Sim-Funded Programs</h2>
+      <p class="section-subtitle">Select a plan, pick a size, toggle monthly or one-time.</p>
+    </div>
+    <div class="flex items-center justify-between gap-4">
+    <div class="pill-row">
+      <button id="planStarter" class="pill active" data-plan="starter">Velocity Starter</button>
+      <button id="planFunded" class="pill" data-plan="funded">Velocity Funded</button>
     </div>
     <div class="flex items-center gap-3">
       <span class="text-neutral-400 text-sm">One-time</span>
       <label class="inline-flex items-center cursor-pointer">
-        <input id="billingToggle" type="checkbox" class="sr-only peer">
+        <input id="billingToggle" type="checkbox" class="sr-only peer" checked>
         <div class="toggle"></div>
       </label>
       <span class="text-neutral-400 text-sm">Monthly</span>
     </div>
   </div>
-  <div class="grid md:grid-cols-3 gap-6 mt-10">
-    <div class="price-card">
-      <h3 class="price-title">$25,000</h3>
-      <p class="price-desc">Profit Target: $1,750</p>
-      <p class="price-num"><span data-onetime="€125" data-monthly="€99" class="price-amount">$125</span></p>
-      <ul class="price-list">
-        <li>Daily Loss: $550</li>
-        <li>Trailing Drawdown: $1,500</li>
-        <li>Max Contracts: 3 (micro 15)</li>
-      </ul>
-      <a href="/checkout.html" class="btn btn-primary w-full">Start $25K</a>
-    </div>
-    <div class="price-card featured">
-      <div class="badge">Popular</div>
-      <h3 class="price-title">$50,000</h3>
-      <p class="price-desc">Profit Target: $3,000</p>
-      <p class="price-num"><span data-onetime="$225" data-monthly="$179" class="price-amount">$225</span></p>
-      <ul class="price-list">
-        <li>Daily Loss: $1,100</li>
-        <li>Trailing Drawdown: $2,500</li>
-        <li>Max Contracts: 6 (micro 30)</li>
-      </ul>
-      <a href="/checkout.html" class="btn btn-primary w-full">Start $50K</a>
-    </div>
-    <div class="price-card">
-      <h3 class="price-title">$100,000</h3>
-      <p class="price-desc">Profit Target: $6,000</p>
-      <p class="price-num"><span data-onetime="$375" data-monthly="$299" class="price-amount">$375</span></p>
-      <ul class="price-list">
-        <li>Daily Loss: $2,200</li>
-        <li>Trailing Drawdown: $4,500</li>
-        <li>Max Contracts: 10 (micro 50)</li>
-      </ul>
-      <a href="/checkout.html" class="btn btn-primary w-full">Start $100K</a>
+
+  <div class="pill-row mt-4" id="sizeRow">
+    <button class="pill active" data-size="25k">$25K</button>
+    <button class="pill" data-size="50k">$50K</button>
+    <button class="pill" data-size="100k">$100K</button>
+  </div>
+
+  <div class="stage-card mt-6" id="stageCard">
+    <div class="flex items-center justify-between">
+      <div>
+        <div class="font-bold">Evaluation Stage <span class="muted">(Starter)</span></div>
+        <div class="muted text-sm mt-1">Reward Cycles: Every 5 trading days at 90% split</div>
+      </div>
+      <div class="hidden lg:block">&nbsp;</div>
     </div>
   </div>
-  <p class="mt-4 text-neutral-500 text-xs">You can edit all targets and pricing in <code>/index.html</code> and <code>/challenges.html</code>.</p>
+
+  <div class="panel mt-4">
+    <div class="kv" id="kvRows">
+      <div class="k">Profit Target</div><div class="v" data-kv="target">$1,750</div>
+      <div class="k">Max. EOD Trailing Loss</div><div class="v" data-kv="mll">$1,500</div>
+      <div class="k">Maximum Daily Loss</div><div class="v" data-kv="daily">?</div>
+      <div class="k">Minimum Trading Days</div><div class="v" data-kv="days">3</div>
+      <div class="k">Consistency</div><div class="v" data-kv="consistency">35%</div>
+      <div class="k">Contracts</div><div class="v" data-kv="contracts">2</div>
+      <div class="k">Weekly Reward Cap</div><div class="v" data-kv="cap">$5,000</div>
+    </div>
+    <div class="mt-4" id="capSelectWrap">
+      <label class="block text-sm text-neutral-300 mb-2">Reward Cap</label>
+      <select id="capSelectHome" class="input w-full max-w-sm">
+        <option value="5k">$5K Reward Cap</option>
+        <option value="1k">$1K Reward Cap</option>
+      </select>
+    </div>
+    <div class="panel-footer">
+      <div class="muted">Account size: <span class="v" data-summary="size">25k</span></div>
+      <div class="accent text-xl" id="priceDisplay">$99/mth</div>
+      <a href="#" class="btn btn-primary">Buy Challenge</a>
+    </div>
+  </div>
+  <p class="muted text-xs mt-2">Current Platform: Rithmic</p>
 </section>
+
+<section class="mx-auto max-w-7xl px-4 py-16" id="learn-more">
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="card">
+      <h3 class="card-title">One-Phase Evaluation</h3>
+      <p class="card-text">Pass a single evaluation step with realistic risk to qualify for a funded account.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Fast Payouts</h3>
+      <p class="card-text">Request payouts quickly with a structure that rewards consistency and discipline.</p>
+    </div>
+    <div class="card">
+      <h3 class="card-title">Transparent Risk</h3>
+      <p class="card-text">Clear risk parameters designed to mimic real prop risk, not to trip you up.</p>
+    </div>
+  </div>
+</section>
+
+<!--Global Traders Section-->
+
+<section class="mt-24 px-4">
+  <style>
+
+.vf-marquee {
+  display: flex;
+  flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.vf-track {
+  display: flex;
+  flex-shrink: 0;        
+}
+
+.vf-card {
+  flex: 0 0 280px;      
+  margin-right: 1rem;   
+}
+
+  </style>
+
+  <div
+    class="mx-auto max-w-6xl rounded-3xl bg-black border border-neutral-800 relative overflow-visible"
+  >
+    
+    <div class="absolute -top-40 left-1/2 -translate-x-1/2 w-[420px] md:w-[520px] lg:w-[580px]">
+      <div class="relative">
+        <img
+          src="/assets/images/velocity-globe-dark.svg"
+          alt="Global trading network"
+          class="w-full h-auto object-contain"
+        />
+        
+        <div
+          class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-b from-transparent via-black/90 to-black"
+        ></div>
+      </div>
+    </div>
+
+    
+    <div class="relative z-10 px-6 md:px-12 pt-40 pb-10">
+      
+      <div class="text-center space-y-3">
+        <h2 class="text-3xl md:text-5xl font-semibold text-white">
+          Traders Powered by Velocity Globally.
+        </h2>
+        <p class="text-neutral-300 text-sm md:text-base">
+          Quick. Transparent. Built for serious futures traders.
+        </p>
+      </div>
+
+      
+      <div class="mt-10 border-t border-neutral-800 pt-8 bg-black">
+        <div class="overflow-hidden">
+          <div class="vf-marquee">
+            
+            <div class="vf-track">
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/us.svg"
+                    alt="USA flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">United States</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Instant funding access for qualified futures traders.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/de.svg"
+                    alt="Germany flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">Germany</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Low latency. Global reach. Built for disciplined execution.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/br.svg"
+                    alt="Brazil flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">Brazil</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  90% payout structure. Reward cycles tailored for consistency.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/th.svg"
+                    alt="Thailand flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">Thailand</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Fast withdrawals. No games. No reward denials.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/gb.svg"
+                    alt="United Kingdom flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">United Kingdom</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Structured evaluations for serious intraday futures traders.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/in.svg"
+                    alt="India flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">India</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Transparent rules. Tight risk. Velocity-backed funding path.
+                </p>
+              </article>
+            </div>
+
+            
+            <div class="vf-track">
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/us.svg"
+                    alt="USA flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">United States</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Instant funding access for qualified futures traders.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/de.svg"
+                    alt="Germany flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">Germany</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Low latency. Global reach. Built for disciplined execution.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/br.svg"
+                    alt="Brazil flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">Brazil</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  90% payout structure. Reward cycles tailored for consistency.
+                </p>
+              </article>
+
+             
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/th.svg"
+                    alt="Thailand flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">Thailand</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Fast withdrawals. No games. No reward denials.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/gb.svg"
+                    alt="United Kingdom flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">United Kingdom</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Structured evaluations for serious intraday futures traders.
+                </p>
+              </article>
+
+              
+              <article
+                class="vf-card bg-neutral-900/80 border border-neutral-800 rounded-2xl px-5 py-4 backdrop-blur-sm"
+              >
+                <div class="flex items-center gap-2">
+                  <img
+                    src="/assets/flags/in.svg"
+                    alt="India flag"
+                    class="h-4 w-6 rounded-sm object-cover"
+                  />
+                  <span class="text-sm font-medium text-white">India</span>
+                </div>
+                <p class="mt-3 text-neutral-300 text-sm">
+                  Transparent rules. Tight risk. Velocity-backed funding path.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+          <div class="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-black via-black/70 to-transparent"></div>
+          <div class="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-black via-black/70 to-transparent"></div>
+
+        <p class="mt-4 text-[11px] text-neutral-500 text-center">
+          For illustrative and aspirational purposes only. Does not represent historical payouts or live performance.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const marquee = document.querySelector(".vf-marquee");
+    if (!marquee) return;
+
+    
+    const firstTrack = marquee.querySelector(".vf-track");
+    if (!firstTrack) return;
+
+    let offset = 0;
+    const speed = 0.5; 
+
+    function step() {
+      offset -= speed;
+
+    
+      const trackWidth = firstTrack.offsetWidth;
+      if (Math.abs(offset) >= trackWidth) {
+        offset = 0;
+      }
+
+      marquee.style.transform = `translateX(${offset}px)`;
+      requestAnimationFrame(step);
+    }
+
+    step();
+  });
+</script>
+
+<!-- Dashboard / Technology / Payouts section -->
+<section id="velocity-dashboard" class="relative bg-black text-white py-20">
+  <div class="max-w-6xl mx-auto px-6 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
+    
+    <!-- TEXT SIDE -->
+    <div>
+      <p class="text-sm font-medium tracking-[0.2em] text-emerald-400 uppercase mb-4">
+        Trader Portal · Built for Futures
+      </p>
+
+      <h2 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+        One dashboard for
+        <span class="text-emerald-400">evaluations, tech, and payouts.</span>
+      </h2>
+
+      <p class="text-base text-gray-300 mb-6 max-w-xl">
+        Velocity Funds connects your evaluation, funded account, and payout history
+        into a single trader-first experience. See your stats in real time, download
+        payout certificates, and understand your risk limits at a glance.
+      </p>
+
+      <div class="space-y-3 mb-8">
+        <div class="flex gap-3">
+          <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
+          <p class="text-sm text-gray-300">
+            <span class="font-semibold text-white">Advanced metrics:</span>
+            win-rate, drawdown, max contracts, and daily loss limits updated live.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
+          <p class="text-sm text-gray-300">
+            <span class="font-semibold text-white">Secure payouts:</span>
+            request withdrawals, track approvals, and view payout history.
+          </p>
+        </div>
+        <div class="flex gap-3">
+          <span class="mt-1 h-2 w-2 rounded-full bg-emerald-400"></span>
+          <p class="text-sm text-gray-300">
+            <span class="font-semibold text-white">Tech-driven edge:</span>
+            lightning-fast infrastructure built around Rithmic & pro-grade tools.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-4">
+        <a
+          href="#pricing"
+          class="inline-flex items-center justify-center rounded-full border border-emerald-400 bg-emerald-400/10 px-6 py-3 text-sm font-semibold text-emerald-300 hover:bg-emerald-400/20 transition"
+        >
+          Start an evaluation
+        </a>
+        <span class="text-xs text-gray-500">
+          View your stats & payout progress from day one.
+        </span>
+      </div>
+    </div>
+
+    <!-- IMAGE SIDE -->
+    <div class="relative">
+      <!-- glow behind phones -->
+      <div class="pointer-events-none absolute inset-0 -translate-x-6 translate-y-6">
+        <div class="h-full w-full rounded-[40px] bg-emerald-500/20 blur-3xl opacity-70"></div>
+      </div>
+
+      <div class="relative rounded-[40px] bg-gradient-to-br from-neutral-900 to-black/70 p-4 sm:p-6 lg:p-8 shadow-[0_0_60px_rgba(0,0,0,0.8)]">
+        <img
+          src="/assets/images/VF-iPhone-Payout.png"
+          alt="Velocity Funds trader dashboard and payout certificate on mobile"
+          class="mx-auto max-w-full drop-shadow-[0_25px_60px_rgba(0,0,0,0.8)]"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Ready to get Funded button-->
 
 <section class="mx-auto max-w-7xl px-4 py-20">
   <div class="cta">
@@ -172,23 +603,24 @@
       <h3 class="text-white text-2xl font-bold">Ready to get funded?</h3>
       <p class="text-neutral-300 mt-2">Pick a challenge, pass the rules, and request your first payout fast.</p>
     </div>
-    <a class="btn btn-primary" href="/challenges.html">Start Now</a>
+    <a class="btn btn-primary" href="#plans">Start Now</a>
   </div>
 </section>
+
+
 
 <footer class="border-t border-neutral-800 mt-24">
   <div class="mx-auto max-w-7xl px-4 py-12 grid md:grid-cols-4 gap-8">
     <div>
       <div class="flex items-center gap-2 mb-3">
-        <img src="/assets/images/logo.svg" class="h-8 w-8" alt="Velocity Funds">
+        <img src="./assets/images/velocity-funds-orbital-icon.svg" class="h-8 w-8" alt="Velocity Funds">
         <span class="text-white font-semibold">Velocity Funds</span>
       </div>
       <p class="text-neutral-400 text-sm leading-6">Accelerating traders with transparent rules, disciplined risk, and fast, reliable payouts.</p>
     </div>
     <div>
-      <h4 class="footer-heading">Product</h4>
+      <h4 class="footer-heading">Funding</h4>
       <ul class="footer-links">
-        <li><a href="/challenges.html">Challenges</a></li>
         <li><a href="/rules.html">Rules</a></li>
         <li><a href="/faq.html">FAQ</a></li>
         <li><a href="/leaderboard.html">Leaderboard</a></li>
@@ -212,12 +644,165 @@
     </div>
   </div>
   <div class="border-t border-neutral-800">
-    <div class="mx-auto max-w-7xl px-4 py-6 flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-      <p class="text-neutral-500 text-sm">&copy; <span id="year"></span> Velocity Funds. All rights reserved.</p>
-      <p class="text-neutral-500 text-xs">Trading futures involves significant risk of loss and is not suitable for all investors.</p>
-    </div>
   </div>
+<!-- ============================= -->
+<!-- Velocity Funds Legal Disclaimer (Separate Footer Div) -->
+<!-- ============================= -->
+<div class="border-t border-neutral-900 bg-black/90 text-neutral-400 text-sm leading-relaxed backdrop-blur-md">
+  <div class="max-w-6xl mx-auto px-4 py-6 space-y-10">
+
+    <style>
+      /* Emerald hover glow for headers */
+      .glow-header {
+        transition: all 0.3s ease;
+      }
+      .glow-header:hover {
+        color: #34d399;
+        text-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+      }
+
+      /* Icon animation and hover */
+      .footer-icon {
+        width: 38px;
+        height: auto;
+        filter: grayscale(100%) brightness(0.8);
+        opacity: 0.7;
+        transition: all 0.4s ease;
+        transform: translateY(10px);
+      }
+      .footer-icon:hover {
+        filter: drop-shadow(0 0 10px rgba(52, 211, 153, 0.9)) brightness(1);
+        opacity: 1;
+        transform: translateY(0) scale(1.05);
+      }
+      .footer-icon.loaded {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    </style>
+
+    <!-- ==================== -->
+    <!-- Legal Disclaimer Text -->
+    <!-- ==================== -->
+    <div class="space-y-6">
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">General Legal Disclaimer</h2>
+        <p>
+          The materials, content, and information made available by <strong>Velocity Funds LLC</strong> (“Velocity
+          Funds,” “we,” “our,” or “us”) through its website, digital interfaces, or other communication channels are
+          provided strictly for general informational and educational purposes only. Nothing herein constitutes
+          investment advice, solicitation, or an offer to buy or sell any financial instruments, securities, or products
+          in any jurisdiction. The information is not directed toward any specific individual or entity and should not
+          be construed as personalized financial, legal, or tax advice.
+        </p>
+        <p class="mt-2">
+          Velocity Funds operates an evaluation and simulated trading environment solely for analytical, educational,
+          and skill-assessment purposes. Any models, data, or performance metrics presented through the Velocity Funds
+          platform do not reflect actual live trading in regulated markets and do not guarantee or imply future
+          performance. Each user is responsible for ensuring that access or use of the platform complies with their
+          jurisdiction’s laws and regulations.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">Risk Disclosure</h2>
+        <p>
+          Trading and speculation in financial markets—whether real, simulated, or educational—carry a high degree of
+          risk. Participation in simulated evaluations or live trading can result in substantial loss, including the
+          loss of all invested capital or more. Simulated performance does not guarantee similar outcomes in live
+          markets, as conditions such as liquidity, volatility, and execution speed differ significantly.
+        </p>
+        <p class="mt-2">
+          Participants should engage only with <em>risk capital</em>—funds they can afford to lose without impacting
+          financial stability or lifestyle. While no real capital is at risk in simulations, strategies developed in
+          simulated environments may not perform effectively in live markets. Velocity Funds LLC does not warrant the
+          accuracy, completeness, or timeliness of any content and makes no assurance of future success or
+          profitability.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">Hypothetical Performance Disclosure</h2>
+        <p>
+          All performance results displayed or referenced by Velocity Funds LLC are hypothetical or simulated unless
+          explicitly stated otherwise. Hypothetical results have inherent limitations—they are developed with the
+          benefit of hindsight and do not reflect actual trading. Simulated results cannot fully capture real-world
+          factors such as liquidity constraints, emotional decision-making, or execution delays.
+        </p>
+        <p class="mt-2">
+          No representation is made that any account will achieve profits or losses similar to those shown in
+          simulations. Testimonials and user stories are anecdotal and not indicative of typical results. Past
+          performance, whether simulated or real, is not a reliable indicator of future outcomes.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">Customer Compensation Disclosure</h2>
+        <p>
+          All trading examples and compensation illustrations presented by Velocity Funds LLC are hypothetical and for
+          educational purposes only. They do not involve real capital or represent live trading conditions. Simulated
+          accounts differ materially from live trading accounts in terms of execution, slippage, and psychological
+          pressures. Velocity Funds makes no warranty that any participant will achieve comparable results.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="glow-header text-lg font-semibold text-white mb-2">CFTC Rule 4.41 Compliance Statement</h2>
+        <p>
+          In accordance with Rule 4.41 of the U.S. Commodity Futures Trading Commission (CFTC): Hypothetical or
+          simulated performance results have inherent limitations. They do not represent actual trading. Since trades
+          have not been executed, results may under- or over-compensate for market factors such as liquidity, execution,
+          and psychology.
+        </p>
+        <p class="mt-2">
+          No representation is made that any account will achieve profits or losses similar to those shown. Testimonials
+          or endorsements are not representative of all users’ experiences. Past results, whether simulated or real, are
+          not indicative of future performance. This disclosure is included to maintain transparency and regulatory
+          alignment, upholding Velocity Funds LLC’s commitment to integrity and user protection.
+        </p>
+      </div>
+    </div>
+
+    <!-- ==================== -->
+    <!-- Payment Icons + Copyright -->
+    <!-- ==================== -->
+    <hr class="border-neutral-800 my-10">
+
+    <div class="flex flex-col items-center justify-center text-center space-y-5">
+      <div class="flex items-center space-x-6">
+        <!-- Replace with your icons -->
+        <img src="/assets/icons/visa.svg" alt="Visa" class="footer-icon" />
+        <img src="/assets/icons/applepay.svg" alt="Apple Pay" class="footer-icon" />
+        <img src="/assets/icons/googlepay.svg" alt="Google Pay" class="footer-icon" />
+      </div>
+
+      <div class="text-neutral-500 text-xs space-y-1">
+        <p><strong>Velocity Funds LLC</strong> — Orlando, Florida</p>
+        <p>© 2025 Velocity Funds LLC. All Rights Reserved.</p>
+      </div>
+    </div>
+
+    <script>
+      // Add a soft fade-in for icons on load
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".footer-icon").forEach((icon, i) => {
+          setTimeout(() => icon.classList.add("loaded"), 150 * i);
+        });
+      });
+    </script>
+  </div>
+</div>
+
+
 </footer>
 
 </body>
 </html>
+
+
+
+
+
+
+
+
