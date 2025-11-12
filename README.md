@@ -1,1 +1,1 @@
-# Velocity-Funds-Alpha
+# VelocityFunds.io
